@@ -64,15 +64,15 @@ window.onload = function() {
     el.setAttribute('data-prop-apply-wrapper', 'true');
     if (langCheck()) {
       if (enviromentCheck()) {
-        el.setAttribute('data-prop-brand-uri', 'GIACourier-DEV-FR');
+        el.setAttribute('data-prop-brand-uri', 'TX Courier-DEV-FR');
       } else {
-        el.setAttribute('data-prop-brand-uri', 'GIACourier-PROD-FR');
+        el.setAttribute('data-prop-brand-uri', 'TX Courier-PROD-FR');
       }
     } else {
       if (enviromentCheck()) {
-        el.setAttribute('data-prop-brand-uri', 'GIACourier-DEV');
+        el.setAttribute('data-prop-brand-uri', 'TX Courier-DEV');
       } else {
-        el.setAttribute('data-prop-brand-uri', 'GIACourier-PROD');
+        el.setAttribute('data-prop-brand-uri', 'TX Courier-PROD');
       }
     }
     el.setAttribute('data-prop-payload', '{"context":{"action":"","pin":"","campaign":""}}');
@@ -114,16 +114,16 @@ function openChatbot(parameter) {
     if (langCheck()) {
       dropinTitle = "Assistant virtuel Puro";
       if (enviromentCheck()) {
-        dropinSrc = "https://t.virtualchatpurolator.com/#/GIACourier-DEV-FR"+param;
+        dropinSrc = "https://t.virtualchatpurolator.com/#/TX Courier-DEV-FR"+param;
       } else {
-        dropinSrc = "https://prod.virtualchatpurolator.com/#/GIACourier-PROD-FR"+param;
+        dropinSrc = "https://prod.virtualchatpurolator.com/#/TX Courier-PROD-FR"+param;
       }
     } else {
       dropinTitle = "Puro Virtual Assistant";
       if (enviromentCheck()) {
-        dropinSrc = "https://t.virtualchatpurolator.com/#/GIACourier-DEV"+param;
+        dropinSrc = "https://t.virtualchatpurolator.com/#/TX Courier-DEV"+param;
       } else {
-        dropinSrc = "https://prod.virtualchatpurolator.com/#/GIACourier-PROD"+param;
+        dropinSrc = "https://prod.virtualchatpurolator.com/#/TX Courier-PROD"+param;
       }
     }
     var w = window.open(dropinSrc, dropinTitle, "width=520,height=600"); // Open new window

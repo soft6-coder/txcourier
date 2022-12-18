@@ -17,12 +17,12 @@ function getShipment(shipmentId) {
         document.getElementById("status").textContent = "INVALID"
         invalidShipmentId();
       } else {
-        if (response.senderPhone == null) {
+        if (response.senderPhone == null || response.senderPhone == "") {
           document.getElementById(
             "sender-phone-number-container"
           ).style.display = "none";
         }
-        if (response.senderEmail == null) {
+        if (response.senderEmail == null || response.senderEmail == "") {
           document.getElementById("sender-email-container").style.display =
             "none";
         }
@@ -32,6 +32,7 @@ function getShipment(shipmentId) {
         document.getElementById("sender-email").textContent =
           response.senderEmail;
 
+          console.log("Sender phone", response.senderPhone);
         document.getElementById("tracking-no").textContent =
           response.shipmentId;
         document.getElementById("status").textContent =
