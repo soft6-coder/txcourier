@@ -15,20 +15,17 @@
   top: 58px;
 }
 .select-container:after {
-  content: ">";
-  width: 20px;
-  font: 20px "Consolas", monospace;
+  content: "\f107";
+  width: 25px;
+  font: normal normal normal 14px/1 FontAwesome;
   font-weight: bold;
+  font-size: 20px;
   color: rgb(85, 85, 85);
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  right: 11px;
+  right: 12px;
   text-align: center;
-  top: 6px;
-  padding: 0 0 4px;
-  border-bottom: 1px solid #999;
+  top: 12px;
+  padding: 0 10px 0;
+  border-left: 1px solid #999;
   position: absolute;
   pointer-events: none;
 }
@@ -40,7 +37,7 @@
   display: block;
   width: 100%;
   max-width: 220px;
-  height: 30px;
+  height: 33px;
   float: right;
   margin: 5px 0px;
   padding: 0px 10px;
@@ -56,55 +53,5 @@
 }
 .select-container select:focus {
   outline: none;
-}
-@media only screen and (min-width: 800px) {
-  .select-language::-ms-expand {
-    display: none;
-  }
-  .select-container {
-    position: fixed;
-    min-width: 170px;
-    left: 0px;
-    z-index: 10;
-    top: 58px;
-  }
-  .select-container:after {
-    content: ">";
-    width: 20px;
-    font: 20px "Consolas", monospace;
-    font-weight: bold;
-    color: #333;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-    right: 11px;
-    text-align: center;
-    top: 6px;
-    padding: 0 0 4px;
-    border-bottom: 1px solid #999;
-    position: absolute;
-    pointer-events: none;
-  }
-  
-  .select-container select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: block;
-    width: 100%;
-    max-width: 220px;
-    height: 30px;
-    float: right;
-    margin: 5px 0px;
-    padding: 0px 10px;
-    font-size: 12px;
-    line-height: 1.25;
-    color: #333;
-    background-color: #ffffff;
-    background-image: none;
-    border: 1px solid #cccccc;
-    -ms-word-break: normal;
-    word-break: normal;
-  }
+  border: 1px solid #cccccc;
 }
