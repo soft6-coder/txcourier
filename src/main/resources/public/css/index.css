@@ -19,7 +19,7 @@
   width: 20px;
   font: 20px "Consolas", monospace;
   font-weight: bold;
-  color: #333;
+  color: rgb(85, 85, 85);
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -52,6 +52,10 @@
   border: 1px solid #cccccc;
   -ms-word-break: normal;
   word-break: normal;
+  outline: none;
+}
+.select-container select:focus {
+  outline: none;
 }
 @media only screen and (min-width: 800px) {
   .select-language::-ms-expand {
