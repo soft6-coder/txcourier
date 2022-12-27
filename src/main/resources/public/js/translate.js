@@ -4448,7 +4448,7 @@ this.default_tr = this.default_tr || {};
     MSG_SSL_INFO_INTRANET_PAGE =
       "The content of this intranet page will be sent to Google for translation, using a secure connection.";
     G[15] = MSG_SSL_INFO_INTRANET_PAGE;
-    MSG_SELECT_LANGUAGE = "Select Language";
+    MSG_SELECT_LANGUAGE = "Translate";
     G[16] = MSG_SELECT_LANGUAGE;
     MSGFUNC_TURN_OFF_TRANSLATION = function (a) {
       return "Turn off " + a + " translation";

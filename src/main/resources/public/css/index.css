@@ -9,10 +9,11 @@
 }
 .select-container {
   position: fixed;
-  min-width: 170px;
+  min-width: 50px;
   left: 0px;
   z-index: 10;
-  top: 58px;
+  /* top: 58px; */
+  bottom: 0px;
 }
 .select-container:after {
   content: "\f107";
@@ -20,12 +21,12 @@
   font: normal normal normal 14px/1 FontAwesome;
   font-weight: bold;
   font-size: 20px;
-  color: rgb(85, 85, 85);
+  color: rgb(255, 255, 255);
   right: 12px;
   text-align: center;
   top: 12px;
   padding: 0 10px 0;
-  border-left: 1px solid #999;
+  border-left: 1px solid rgb(255, 255, 255);
   position: absolute;
   pointer-events: none;
 }
@@ -36,17 +37,17 @@
   appearance: none;
   display: block;
   width: 100%;
-  max-width: 220px;
+  max-width: 120px;
   height: 33px;
   float: right;
   margin: 5px 0px;
   padding: 0px 10px;
   font-size: 12px;
   line-height: 1.25;
-  color: #333;
-  background-color: #ffffff;
+  color: rgb(255, 255, 255);
+  background-color: rgb(240, 2, 2);
   background-image: none;
-  border: 1px solid #cccccc;
+  border: 1px solid rgb(240, 2, 2);
   -ms-word-break: normal;
   word-break: normal;
   outline: none;
